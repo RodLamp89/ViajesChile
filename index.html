@@ -28,23 +28,24 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item d-none d-md-block d-lg-block">
+                            <a class="nav-link" href="#quienesSomos">Quienes Somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Quienes Somos</a>
+                            <a class="nav-link" href="#destacados">Destacados</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Destacados</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
+            <div id="inicio" class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="carousel-1">
                 </div>
@@ -68,8 +69,8 @@
         </div>
     </header>
 
-    <section class="bg-black">
-        <h2 class="text-center pt-5 pb-3">¿QUIÉNES SOMOS?</h2>
+    <section class="bg-black d-none d-md-block d-lg-block">
+        <h2 id="quienesSomos" class="text-center pt-5 pb-3">¿QUIÉNES SOMOS?</h2>
         <div class="container">
             <hr>
             <div class="row pt-4">
@@ -111,7 +112,7 @@
     </section>
 
     <section class="bg-black">
-        <h2 class="text-center pt-5 pb-3">DESTACADOS</h2>
+        <h2 id="destacados" class="text-center pt-5 pb-3">DESTACADOS</h2>
         <div class="container pb-5">
             <hr>
             <div class="row pt-4">
@@ -166,23 +167,27 @@
     </section>
 
     <section class="bg-black">
-        <h2 class="text-center pt-5 pb-3">CONTACTO</h2>
+        <h2 id="contacto" class="text-center pt-5 pb-3">CONTACTO</h2>
         <div class="container pb-5">
             <hr>
             <form>
                 <div class="mb-3">
                     <label for="name" class="form-label">Nombre</label>
-                    <input type="string" class="form-control" id="name" aria-describedby="name">
+                    <input type="string" class="form-control" id="name" aria-describedby="name" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Escribe aquí tu nombre">
                 </div>
                 <div class="mb-3">
                     <label for="subject" class="form-label">Asunto</label>
-                    <input type="string" class="form-control" id="subject">
+                    <input type="string" class="form-control" id="subject" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Describe en pocas palabras de qué trata tu mensaje a nivel general (Ejemplo: 'Precios de viajes')">
                 </div>
                 <div class="mb-3">
                     <label for="message" class="form-label">Mensaje</label>
-                    <input type="string" class="form-control" id="message">
+                    <input type="string" class="form-control" id="message" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Escribe tu mensaje con todos los detalles necesarios para que podamos darte una respuesta satisfactoria.">
                 </div>
-                <button type="submit" class="btn btn-primary bg-info">Enviar</button>
+                <button id="enviarMensaje" type="button" class="btn btn-primary bg-info" data-bs-toggle="tooltip" data-bs-placement="right"
+                title="Presiona para enviarnos tu mensaje">Enviar</button>
             </form>
         </div>
     </section>
@@ -192,10 +197,10 @@
             <div class="col-6 text-center">
                 <h3>VIAJES CHILE</h3></div>
             <div class="col-6 text-center">
-                <i class="fa-brands fa-github fa-2x px-2"></i>
-                <i class="fa-brands fa-linkedin fa-2x px-2"></i>
-                <i class="fa-brands fa-twitter-square fa-2x px-2"></i>
-                <i class="fa-brands fa-facebook-square fa-2x px-2"></i>
+                <a href="http://www.github.com/viajeschile"><i class="fa-brands fa-github fa-2x px-2"></i></a>
+                <a href="http://www.linkedin.com/viajeschile"><i class="fa-brands fa-linkedin fa-2x px-2"></i></a>
+                <a href="http://www.twitter.com/viajeschile"><i class="fa-brands fa-twitter-square fa-2x px-2"></i></a>
+                <a href="http://www.facebook.com/viajeschile"><i class="fa-brands fa-facebook-square fa-2x px-2"></i></a>
         </div></div>
     </footer>
 
